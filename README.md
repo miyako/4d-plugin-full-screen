@@ -30,3 +30,9 @@ Parameter|Type|Description
 ------------|------|----
 window|INT32|Window reference
 fullscreen|INT32|``1`` to enter full screen; ``0`` to exit full screen
+
+###Remarks
+
+For 32 bits, requires v14 build number >= ``172426``. The ``EX_GET_HWND`` entry point has been updated in this build; in earlier versions of v14, ``PA_GetWindowPtr()`` did nothing; it was a simple type cast.
+
+For 64 bits,  requires ``15R3`` or later. The ``EX_GET_HWND`` entry point has been updated to return a ``NSWindow*``.
