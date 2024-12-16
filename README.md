@@ -7,7 +7,7 @@ Invoke full screen mode on Mac
 
 full screen mode (other than 32-bit carbon/QuickTime full screen mode) was introduced in 4D v14 and Mac OS X 10.7.
 
-it seems the only way to invoke this is to simulate a click on the full screen button.
+it seems the only way to invoke this mode by code is to simulate a click on the full screen button.
 
 `[window toggleFullScreen:nil]` or `[[window standardWindowButton:NSWindowZoomButton]performClick:nil]` does not work.
 
