@@ -13,7 +13,7 @@ it seems the only way to invoke this mode by code is to simulate a click on the 
 
 as such, the plugin can only enter full screen, not return from it.
 
-also, low-level automatic of mouse events require accesibility permisson.
+also, low-level automation of mouse events require accesibility permisson.
 
 ## Syntax
 
