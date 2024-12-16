@@ -1,1 +1,0 @@
-﻿{"name":"full-screen-window","id":20000,"commands":[{"theme":"full-screen-window","syntax":"Get window full screen(&L):L"},{"theme":"full-screen-window","syntax":"SET WINDOW FULL SCREEN(&L;&L)"}]}
