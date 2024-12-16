@@ -1,15 +1,19 @@
 # 4d-plugin-full-screen-window
 Control full screen status of a window on Mac
 
-### Platform
+### References
 
-| carbon | cocoa | win32 | win64 |
-|:------:|:-----:|:---------:|:---------:|
-||<img src="https://cloud.githubusercontent.com/assets/1725068/22371562/1b091f0a-e4db-11e6-8458-8653954a7cce.png" width="24" height="24" />|||
+https://developer.apple.com/library/archive/documentation/General/Conceptual/MOSXAppProgrammingGuide/FullScreenApp/FullScreenApp.html#//apple_ref/doc/uid/TP40010543-CH6-SW4
 
-### Version
+full screen mode (other than 32-bit carbon/QuickTime full screen mode) was introduced in 4D v14 and Mac OS X 10.7.
 
-<img src="https://cloud.githubusercontent.com/assets/1725068/22371270/93e3661c-e4d9-11e6-9021-4a9754c70630.png" width="32" height="32" /> <img src="https://cloud.githubusercontent.com/assets/1725068/18940648/2192ddba-8645-11e6-864d-6d5692d55717.png" width="32" height="32" />
+it seems the only way to invoke this is to simulate a click on the full screen button.
+
+`[window toggleFullScreen:nil]` or `[[window standardWindowButton:NSWindowZoomButton]performClick:nil]` does not work.
+
+as such, the plugin can only enter full screen, not return from it.
+
+also, low-level automatic of mouse events require accesibility permisson.
 
 ## Syntax
 
