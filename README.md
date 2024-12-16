@@ -23,8 +23,8 @@ fullscreen:=Get window full screen (window)
 
 Parameter|Type|Description
 ------------|------|----
-window|INT32|Window reference
-fullscreen|INT32|``1`` if full screen
+window|Integer|Window reference
+fullscreen|Integer|``1`` if full screen
 
 ```
 SET WINDOW FULL SCREEN (window;fullscreen)
@@ -32,15 +32,5 @@ SET WINDOW FULL SCREEN (window;fullscreen)
 
 Parameter|Type|Description
 ------------|------|----
-window|INT32|Window reference
-fullscreen|INT32|``1`` to enter full screen; ``0`` to exit full screen
-
-### Remarks
-
-For 64 bits,  requires ``15R3`` or later. The ``EX_GET_HWND`` entry point has been updated to return a ``NSWindow*``.
-
-Using the standard API ``toggleFullScreen:`` or ``performClick:`` has undesired effects in 4D.
-
-As a workaround, the plugin simulates a click event on the zoom button to enter full screen.
-
-It does use the standard API to exit, since the zoom button is hidden, there is a redraw issue on the unzoomed window.To force update the window, the plugin deactivates the application immediately before zoom. But the transition image is not good, and the window is grayed out.
+window|Integer|Window reference
+fullscreen|Integer|``1`` to enter full screen; ``0`` does nothing
