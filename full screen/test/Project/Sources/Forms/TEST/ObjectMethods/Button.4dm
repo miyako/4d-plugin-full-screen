@@ -1,0 +1,1 @@
+SET WINDOW FULL SCREEN(Current form window:C827)

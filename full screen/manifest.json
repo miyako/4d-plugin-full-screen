@@ -1,0 +1,16 @@
+{
+    "name": "full screen",
+    "id": 20000,
+    "commands": [
+        {
+            "theme": "full screen",
+            "syntax": "Get window full screen(&L):L",
+            "threadSafe": true
+        },
+        {
+            "theme": "full screen",
+            "syntax": "SET WINDOW FULL SCREEN(&L;&L)",
+            "threadSafe": true
+        }
+    ]
+}
