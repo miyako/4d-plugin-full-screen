@@ -1,4 +1,4 @@
-# 4d-plugin-full-screen-window
+# 4d-plugin-full-screen
 Control full screen status of a window on Mac
 
 ### References
