@@ -1,3 +1,7 @@
+![deprecated](https://img.shields.io/badge/-deprecated-inactive)
+
+use [miyako/4d-plugin-menu](https://github.com/miyako/4d-plugin-menu)
+
 # 4d-plugin-full-screen
 Invoke full screen mode on Mac
 
